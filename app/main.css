@@ -1135,10 +1135,6 @@ video {
   width: 0.375rem;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -2349,6 +2345,11 @@ video {
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -2442,11 +2443,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -2504,10 +2500,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .p-8 {
@@ -2599,14 +2591,14 @@ video {
   padding-bottom: 0.625rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-36 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
 }
 
 .py-4 {
@@ -2617,11 +2609,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 .\!pb-0 {
@@ -2652,6 +2639,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -2672,8 +2663,8 @@ video {
   padding-left: 0.25rem;
 }
 
-.pl-36 {
-  padding-left: 9rem;
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .pl-4 {
@@ -2722,22 +2713,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .text-left {
@@ -2824,6 +2799,11 @@ video {
   line-height: var(--nextui-line-height-medium);
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-small {
   font-size: var(--nextui-font-size-small);
   line-height: var(--nextui-line-height-small);
@@ -2837,11 +2817,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -2858,10 +2833,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-thin {
-  font-weight: 100;
 }
 
 .tabular-nums {
@@ -8044,16 +8015,16 @@ video {
     padding-bottom: 9rem;
   }
 
-  .md\:pt-0 {
-    padding-top: 0px;
+  .md\:pl-36 {
+    padding-left: 9rem;
   }
 
   .md\:pl-4 {
     padding-left: 1rem;
   }
 
-  .md\:pl-36 {
-    padding-left: 9rem;
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 }
 

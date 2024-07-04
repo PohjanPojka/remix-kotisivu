@@ -18,7 +18,7 @@ import MainNavbar from "../components/MainNavbar";
             rel="icon"
             href="data:image/x-icon;base64,AA"
           />
-          <meta name="viewport" content="width=device-width, initial-scale=1.5"></meta>
+          <meta name="viewport" content="width=device-width, initial-scale=0.5"></meta>
           <Meta />
           <Links />
         </head>
