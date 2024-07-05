@@ -7,7 +7,7 @@ export default function App({postId}) {
 
     return (
         <>
-            <div className="bg-gray-800 rounded-lg w-1/3 text-2xl sm:text-medium">
+            <div className="bg-gray-800 rounded-lg sm:w-1/3 w-full text-2xl sm:text-medium">
                     <Image alt={data[postId].imgalt} src={data[postId].imgsrc}></Image>
                     <Link href={"/blog#"+data[postId].id} className="inline-flex p-4 font-semibold text-2xl sm:text-medium">{data[postId].title}</Link>
                     <Divider className="bg-gray-600"/>

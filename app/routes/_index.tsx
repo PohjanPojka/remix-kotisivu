@@ -40,7 +40,7 @@ export default function App() {
             <div className="py-8 text-white font-montserrat" id="portfolio">
                 <p className="font-semibold text-6xl underline pb-8 pl-6">Projektini</p>
                 <div className="gap-2 space-y-4 md:space-y-0 px-4 sm:px-24">
-                    <ProjectCard name="Portfoliosivu" desc="Remixillä ja NextUI-käyttöliittymäkirjastolla kasattu portfolioverkkosivu." langs={[ "devicon-typescript-plain", "devicon-react-original colored", "devicon-tailwindcss-plain" ]} git="https://github.com" links=""/>
+                    <ProjectCard name="Portfoliosivu" desc="Remixillä ja NextUI-käyttöliittymäkirjastolla kasattu portfolioverkkosivu." langs={[ "devicon-typescript-plain", "devicon-react-original colored", "devicon-tailwindcss-plain" ]} git="https://github.com/PohjanPojka/remix-kotisivu" links=""/>
                 </div>
             </div>
             <Divider className="bg-gray-500"/>
