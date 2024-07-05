@@ -1,17 +1,20 @@
 import React from "react";
 import { Image, Divider, Link } from "@nextui-org/react";
+import { useLoaderData } from "@remix-run/react";
 
-export default function App() {
+export default function App({postId}) {
+    const { data } = useLoaderData<typeof loader>();
+
     return (
         <>
             <div className="bg-gray-800 rounded-lg w-100 h-100 text-2xl sm:text-medium">
-                    <Image alt="NextUI hero Image" src="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"></Image>
-                    <Link href="/blog#post-1" className="inline-flex p-4 font-semibold text-2xl sm:text-medium">Blogin otsikko: tilapäinen teksti</Link>
+                    <Image alt={data[postId].imgalt} src={data[postId].imgsrc}></Image>
+                    <Link href="/data#${data[postId].postId}" className="inline-flex p-4 font-semibold text-2xl sm:text-medium">{data[postId].title}</Link>
                     <Divider className="bg-gray-600"/>
-                    <p className="text-2xl sm:text-medium inline-flex p-4">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
+                    <p className="text-2xl sm:text-medium inline-flex p-4">{data[postId].summary}</p>
                     <div className="flex justify-between text-gray-400 p-4 text-xl sm:text-sm">
-                        <p>1.1.1900</p>
-                        <p>Ohjelmointi</p>
+                        <p>{data[postId].date}</p>
+                        <p>{data[postId].category}</p>
                     </div>
             </div>
         </>

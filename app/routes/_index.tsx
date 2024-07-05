@@ -7,8 +7,28 @@ import SkillsNavigator from "../../components/SkillsNavigator"
 import ContactInput from "../../components/ContactInput"
 import BlogCard from "../../components/BlogCard"
 import type { LinksFunction } from "@remix-run/node"
+import path from "path";
+import { fileURLToPath } from "url";
+import { json } from "@remix-run/node";
+import { promises as fs } from "fs";
+import { useLoaderData } from "@remix-run/react";
+import type { LoaderFunctionArgs } from "@remix-run/node";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export const loader = async (args: LoaderFunctionArgs) => {
+    
+    const jsonDirectory = __dirname + "/../../blog";
+    const fileContent = await fs.readFile(jsonDirectory + "/blogData.json", "utf8");
+    const data = JSON.parse(fileContent);
+  
+    return json({data});
+  } 
 
 export default function App() {
+
+    const { data } = useLoaderData<typeof loader>();
 
     return(
         <>
@@ -35,9 +55,9 @@ export default function App() {
             <div className="p-8 text-white font-montserrat">
                 <p className="font-semibold text-6xl underline pb-6">Blogi</p>
                 <div className="block sm:flex justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <BlogCard/>
-                    <BlogCard/>
-                    <BlogCard/>
+                    <BlogCard postId={0}/>
+                    <BlogCard postId={0}/>
+                    <BlogCard postId={0}/>
                 </div>
             </div>
             
