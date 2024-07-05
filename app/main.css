@@ -2639,6 +2639,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .\!pb-0 {
   padding-bottom: 0px !important;
 }
@@ -8041,6 +8046,11 @@ video {
     padding-bottom: 9rem;
   }
 
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .sm\:pl-4 {
     padding-left: 1rem;
   }
@@ -8051,6 +8061,10 @@ video {
 
   .sm\:pl-36 {
     padding-left: 9rem;
+  }
+
+  .sm\:pl-10 {
+    padding-left: 2.5rem;
   }
 
   .sm\:text-left {

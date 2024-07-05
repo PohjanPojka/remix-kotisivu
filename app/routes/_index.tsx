@@ -32,9 +32,9 @@ export default function App() {
 
     return(
         <>
-            <div className="bg-gradient-to-t from-gray-700 to-gray-600 text-white font-montserrat py-24 md:py-36 pl-10 md:pl-36">
+            <div className="bg-gradient-to-t from-gray-700 to-gray-600 text-white font-montserrat py-24 md:py-36 px-10 sm:pl-10 md:pl-36">
             <div className="w-max"><p className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white text-3xl sm:text-5xl text-white font-bold">Eemeli Myllymäki</p></div>
-            <p className="inline-flex break-words text-2xl sm:text-medium pt-5 w-2/3 sm:w-1/2"> Terve! Olen Eemeli Myllymäki, nuori ja intohimoinen ohjelmistokehittäjän alku Tampereen seudulta. Vaikka minulla ei ole virallista koulutusta, olen itsenäisesti hankkinut vahvat taidot ja kokemusta monista ohjelmointikielistä eri harrastusprojektien kautta. Olen aina innokas oppimaan uutta ja ottamaan vastaan haasteita; erityisesti niitä, jotka vaativat luovaa ajattelua ja veitsenterävää ongelmanratkaisukykyä. Täällä voit tutustua projekteihini ja nähdä, mihin kaikkeen olen pystynyt pelkän pitkäjänteisyyden ja ahkeran harjoittelun avulla.</p>
+            <p className="inline-flex break-words text-2xl sm:text-medium pt-5 w-full sm:w-1/2"> Terve! Olen Eemeli Myllymäki, nuori ja intohimoinen ohjelmistokehittäjän alku Tampereen seudulta. Vaikka minulla ei ole virallista koulutusta, olen itsenäisesti hankkinut vahvat taidot ja kokemusta monista ohjelmointikielistä eri harrastusprojektien kautta. Olen aina innokas oppimaan uutta ja ottamaan vastaan haasteita; erityisesti niitä, jotka vaativat luovaa ajattelua ja veitsenterävää ongelmanratkaisukykyä. Täällä voit tutustua projekteihini ja nähdä, mihin kaikkeen olen pystynyt pelkän pitkäjänteisyyden ja ahkeran harjoittelun avulla.</p>
             </div>
             <Divider className="bg-gray-500"/>
             <div className="py-8 text-white font-montserrat" id="portfolio">
