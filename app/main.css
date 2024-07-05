@@ -1249,6 +1249,10 @@ video {
   width: 100vw;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .min-w-10 {
   min-width: 2.5rem;
 }
@@ -7981,6 +7985,10 @@ video {
 
   .sm\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .sm\:w-96 {
+    width: 24rem;
   }
 
   .sm\:items-start {
