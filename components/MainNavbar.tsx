@@ -26,9 +26,6 @@ export default function MainNavbar() {
                     <a href="/#portfolio"><Button endContent={<FaEye size="24"/>} className="text-white text-base bg-green-600 font-semibold">Portfolio </Button></a>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="/about" className="text-white">Tietoja</Link>
-                </NavbarItem>
-                <NavbarItem>
                     <Link href="/blog" className="text-white">Blogi</Link>
                 </NavbarItem>
             </NavbarContent>

@@ -14,18 +14,19 @@
 ##   text and leave all files detected as binary untouched.
 ##   This will handle all files NOT defined below.
 *                 text=auto
+*   linguist-vendored
 
 # Source code
 *.bash            text eol=lf
 *.bat             text eol=crlf
 *.cmd             text eol=crlf
 *.coffee          text
-*.css             text diff=css
+*.css             text diff=css linguist-vendored=false
 *.htm             text diff=html
 *.html            text diff=html
 *.inc             text
 *.ini             text
-*.js              text
+*.js              text linguist-vendored=false
 *.mjs             text
 *.cjs             text
 *.json            text
@@ -49,7 +50,7 @@
 *.styl            text
 *.tag             text
 *.ts              text
-*.tsx             text
+*.tsx             text linguist-vendored=false
 *.xml             text
 *.xhtml           text diff=html
 

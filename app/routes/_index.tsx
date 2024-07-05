@@ -39,11 +39,8 @@ export default function App() {
             <Divider className="bg-gray-500"/>
             <div className="py-8 text-white font-montserrat" id="portfolio">
                 <p className="font-semibold text-6xl underline pb-8 pl-6">Projektini</p>
-                <div className="gap-2 space-y-4 md:space-y-0 md:grid grid-cols-2 grid-rows-2 px-4 sm:px-24">
+                <div className="gap-2 space-y-4 md:space-y-0 px-4 sm:px-24">
                     <ProjectCard name="Portfoliosivu" desc="Remixillä ja NextUI-käyttöliittymäkirjastolla kasattu portfolioverkkosivu." langs={[ "devicon-typescript-plain", "devicon-react-original colored", "devicon-tailwindcss-plain" ]} git="https://github.com" links=""/>
-                    <ProjectCard name="Portfoliosivu" desc="Remixillä ja NextUI:n frontend-työkaluilla kasattu portfolioverkkosivu." langs={[ "devicon-typescript-plain", "devicon-react-original colored" ]} git="https://github.com" links=""/>
-                    <ProjectCard name="Portfoliosivu" desc="Remixillä ja NextUI:n frontend-työkaluilla kasattu portfolioverkkosivu." langs={[ "devicon-typescript-plain", "devicon-react-original colored" ]} git="https://github.com" links=""/>
-                    <ProjectCard name="Portfoliosivu" desc="Remixillä ja NextUI:n frontend-työkaluilla kasattu portfolioverkkosivu." langs={[ "devicon-typescript-plain", "devicon-react-original colored" ]} git="https://github.com" links=""/>
                 </div>
             </div>
             <Divider className="bg-gray-500"/>
@@ -55,8 +52,6 @@ export default function App() {
             <div className="p-8 text-white font-montserrat">
                 <p className="font-semibold text-6xl underline pb-6">Blogi</p>
                 <div className="block sm:flex justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <BlogCard postId={0}/>
-                    <BlogCard postId={0}/>
                     <BlogCard postId={0}/>
                 </div>
             </div>
