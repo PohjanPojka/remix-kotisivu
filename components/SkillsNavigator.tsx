@@ -12,7 +12,7 @@ export default function App() {
 
     return (
         <>
-            <ul className="flex justify-center flex-wrap gap-4 p-4 pt-8 text-white font-montserrat text-2xl sm:text-medium w-full">
+            <ul className="flex justify-center flex-wrap gap-4 p-4 pt-8 text-white font-montserrat text-xl sm:text-medium w-full">
                 {/** Kopioi rivi aina uudelle elementille. En jaksa säätää tämän kanssa enempää. */}
                 <li onMouseOver={() => setState(["React", "Olen rakentanut verkkosivuja eri React-pohjaisilla ohjelmistokehyksillä. Osaan tuottaa komponenttipohjaisia verkkosivukokonaisuuksia.", "https://react.dev/", "devicon-react-original"])} className="bg-slate-800 p-2 rounded-md hover:bg-slate-500">React</li>
                 <li onMouseOver={() => setState(["TypeScript", "Käytän yleisesti TypeScriptiä aina kun mahdollista JavaScriptin sijaan. Luonnollisesti molempien käyttäminen sujuu.", "https://www.typescriptlang.org/", "devicon-typescript-plain"])} className="bg-slate-800 p-2 rounded-md hover:bg-slate-500">TypeScript</li>
@@ -32,7 +32,7 @@ export default function App() {
                             <i className="text-4xl" class={state[3]}></i>
                         </CardHeader>
                     <Divider className="bg-gray-400"/>
-                        <CardBody className="text-2xl sm:text-medium">
+                        <CardBody className="text-xl sm:text-medium">
                             {state[1]}
                         </CardBody>
                         <CardFooter>

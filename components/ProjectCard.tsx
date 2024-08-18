@@ -7,7 +7,7 @@ export default function App({ name, desc, langs, git, links }) {
     return (
         <>
             <Card className="bg-gray-800 text-slate-100 font-montserrat">
-                <CardHeader className="w-max font-semibold text-3xl sm:text-lg">
+                <CardHeader className="w-max font-semibold text-2xl sm:text-lg">
                     <p>{name}</p>
                     <div className="pl-4 space-x-2 text-3xl sm:text-2xl">
                         <i class={langs[0]}></i>
@@ -17,11 +17,11 @@ export default function App({ name, desc, langs, git, links }) {
                 </CardHeader>
                 <Divider className="bg-gray-500"/>
                 <CardBody>
-                    <p className="text-2xl sm:text-medium">{desc}</p>
+                    <p className="text-xl sm:text-medium">{desc}</p>
                 </CardBody>
                 <Divider className="bg-gray-500"/>
                 <CardFooter>
-                    <Link className="text-2xl sm:text-medium" showAnchorIcon href={git}>Lähdekoodi Githubissa</Link>
+                    <Link className="text-xl sm:text-medium" showAnchorIcon href={git}>Lähdekoodi Githubissa</Link>
                 </CardFooter>
             </Card>
         </>

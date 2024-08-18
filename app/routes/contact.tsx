@@ -22,7 +22,7 @@ export async function action({request}: ActionFunctionArgs) {
     };
 
     try { transporter.sendMail({
-            from: '"noreply" <noreply@eemelimyllymaki.fi>',
+            from: '"Eemeli Myllymäki" <contact@eemelimyllymaki.fi>',
             to: newMail.email,
             subject: "Kiitos yhteydenotosta",
             text: "Testi"
