@@ -12,7 +12,7 @@ import MainNavbar from "../components/MainNavbar";
  
   export default function App() {
     return (
-      <html className="min-h-full scroll-smooth">
+      <html className="min-h-full scroll-smooth" charset="utf-8">
         <head>
           <link
             rel="icon"
